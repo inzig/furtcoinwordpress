@@ -1,5 +1,15 @@
 <?php /* Template Name: Landing Page */ ?>
 <?php get_header(); ?>
+<?php 
+		$menu_items = wp_get_nav_menu_items('main-menu');
+	?>
+	<?php 
+$args = array( 
+'post_type' => 'slider',
+);
+
+$slider = new WP_Query( $args );
+?>
 
 <div class="kode-wrapper">
 			  <header class="FORTCOIN-header">
@@ -7,74 +17,15 @@
 				  <div class="container">
 					<div class="pull-right">
 						<div class="login-wraper3">
-							<ul class="login-meta">
-							  <li><a href="#">help desk</a></li>
-							  <li><a href="#">live score</a></li>
-								<li>
-									<a type="button" class="btn btn-primary" data-toggle="modal" data-target=".media01">Login</a>
-
-									<div class="modal fade bs-example-modal-lg media01" tabindex="-1" role="login" aria-labelledby="login">
-									  <div class="modal-dialog modal-lg" role="document">
-										<div class="modal-content">
-											<div class="kode_modal_body">
-												<a href="#"><i class="fa fa-user"></i></a>
-												<h2>member  login</h2>
-												<form>
-													<div class="kode_modal_field">
-														<input type="text" placeholder="username" required>
-													</div>
-													<div class="kode_modal_field">
-														<input type="text" placeholder="password" required>
-													</div>
-													<div class="kode_model_btn">
-														<button>login</button>
-														<a href="#">forget password?</a>
-													</div>
-												</form>
-											</div>
-										</div>
-									  </div>
-									</div>
-								</li>
-								<li>
-									<a type="button" class="btn btn-primary" data-toggle="modal" data-target=".media02">Register</a>
-									
-									<div class="modal fade bs-example-modal-lg media02" tabindex="-1" role="Register" aria-labelledby="Register">
-									  <div class="modal-dialog modal-lg" role="document">
-										<div class="modal-content">
-											<div class="kode_modal_body">
-												<a href="#"><i class="fa fa-user"></i></a>
-												<h2>Register</h2>
-												<form>
-													<div class="kode_modal_field">
-														<input type="text" placeholder="username" required>
-													</div>
-													<div class="kode_modal_field">
-														<input type="text" placeholder="password" required>
-													</div>
-													<div class="kode_modal_field">
-														<input type="text" placeholder="confirm password" required>
-													</div>
-													<div class="kode_model_btn">
-														<button>register</button>
-														<a href="#">member  login</a>
-													</div>
-												</form>
-											</div>
-										</div>
-									  </div>
-									</div>
-									
-								</li>
-							  
+							<ul class="login-meta">													  
 							  <li><a id="ftb_btn_link" ><i class="fa fa-search"></i></a></li>
 							</ul>
 						  <div id="show-class"><form><input type="text" placeholder="your key word"></form></div>
 						  <ul class="social-style3">
-							  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-							  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							  <li><a target="_blank" href="https://web.facebook.com/furt.coin.7"><i class="fa fa-facebook"></i></a></li>
+							  <li><a target="_blank" href="https://twitter.com/furtcoin"><i class="fa fa-twitter"></i></a></li>
+							  <li><a target="_blank" href="https://bitcointalk.org/index.php?topic=5040875"><i class="fa fa-bitcoin"></i></a></li>
+							  <li><a target="_blank" href="https://www.instagram.com/furtcoin/"><i class="fa fa-instagram"></i></a></li>
 						  </ul>
 					  </div>
 					</div>
@@ -90,60 +41,46 @@
 					  <ul class="top_slider_bxslider">
 						<li>
 						  <div class="ticker-dec">
-							<a href="#">Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean soquis bibendum auctor, entum feugiat,</a>
+							<a href="#">Latest News</a>
 						  </div>
 						</li>
 						<li>
 						  <div class="ticker-dec">
-							<a href="#">Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean soquis bibendum auctor, entum feugiat,</a>
+							<a href="#">Latest News</a>
 						  </div>
 						</li>
 					  </ul>
 					</div>
 				  </div>
 				</div>
-
 				<div class="nav4" id="myHeader">
 				  <div class="container">
 					<ul class="kode_nave">
-						<li><a href="#">home</a>							
-						</li>
-						<li><a href="#aboutus">About Us</a></li>
-						<li><a href="#tokensale">Token Sale</a>							  
-						</li>
-						<li><a href="#video">video</a>							
-						</li>
-						<li><a href="shop.html">Shop</a></li>
-						<li><a href="#blog">Blog</a>							
-						</li>						
-						<li><a href="#contactus">Contact Us</a></li>
+					<?php 
+						foreach($menu_items as $menu_item) {
+							echo '<li><a href="'.$menu_item->url.'">'.$menu_item->title.'</a>';
+						}
+					?>			
 					</ul>
 					<!--DL Menu Start-->
 					<div id="kode-responsive-navigation" class="dl-menuwrapper">
 					<button class="dl-trigger">Open Menu</button>
 						<ul class="dl-menu">
-							<li class="active"><a class="active" href="#">Home</a>								
-							</li>
-							<li class="menu-item kode-parent-menu"><a href="about-us.html">About Us</a></li>
-							<li class="menu-item kode-parent-menu"><a href="fixtures.html">fixtures</a>								
-							</li>
-							<li class="menu-item kode-parent-menu"><a href="#">Team & Player</a>								
-							</li>
-							<li class="menu-item kode-parent-menu"><a href="shop.html">shop</a></li>
-							<li class="menu-item kode-parent-menu"><a href="#blog">blog</a>								
-							</li>
-							<li class="menu-item kode-parent-menu"><a href="#">page</a>								
-							</li>
-							<li><a href="#contactus">contact Us</a></li>
+						<?php 							
+							foreach($menu_items as $menu_item) {
+								echo '<li><a href="'.$menu_item->url.'">'.$menu_item->title.'</a>';
+							}
+						?>
 						</ul>
 					</div>
 					<!--DL Menu END-->
 					<div class="ticket-wrap">
-					  <a class="book-now" href="tickets.html"><i class="fa fa-ticket"></i>Buy Tickets</a>
+					<a class="book-now" href="#"><i class="fa fa-ticket"></i>Exchange Tickets</a>
+					<a class="book-now" href="#"><i class="fa fa-ticket"></i>Buy Tickets</a>
 					  <div class="lung-link">
 						<a href="#">en</a>
 						<a href="#">fr</a>
-					  </div>
+					</div>
 					</div>
 				  </div>
 				</div>
@@ -152,6 +89,28 @@
 				<div class="flexslider">
 				  <ul class="slides">
 					<li>
+					  <div class="thumb-slider">
+						<img src="<?php echo get_template_directory_uri(); ?>/home/images/slide4.jpg" alt="" />
+						<div class="container">
+						  <div class="kode-ft-caption text-left"> 
+							<div class="FORTCOIN-caption">  
+								<?php
+								while ( $slider->have_posts() ) : $slider->the_post();
+									echo "<h6>";
+									the_title();
+									echo "</h6>";
+									the_content();						
+								endwhile;
+								?>								
+							</div>
+							<div class="clearfix"></div>        
+							<p><a class="btn-4" href="#">Veiw More<i class="fa fa-angle-right"></i></a></p>
+							<div class="clearfix"></div>
+						  </div>
+						</div>
+					  </div>
+					</li>
+					<!-- <li>
 					  <div class="thumb-slider">
 						<img src="<?php echo get_template_directory_uri(); ?>/home/images/slide4.jpg" alt="" />
 						<div class="container">
@@ -167,8 +126,8 @@
 						  </div>
 						</div>
 					  </div>
-					</li>
-					<li>
+					</li> -->
+					<!-- <li>
 					  <div class="thumb-slider">
 						<img src="<?php echo get_template_directory_uri(); ?>/home/images/slide5.jpg" alt="" />
 						<div class="container">
@@ -184,10 +143,8 @@
 						  </div>
 						</div>
 					  </div>
-					  <!--// THUMB SLIDER END //-->
-					</li>
-					<li>
-					  <!--// THUMB SLIDER START //-->
+					</li> -->
+					<!-- <li>
 					  <div class="thumb-slider">
 						<img src="<?php echo get_template_directory_uri(); ?>/home/images/slide7.jpg" alt="" />
 						<div class="container">
@@ -203,20 +160,16 @@
 						  </div>
 						</div>
 					  </div>
-					  <!--// THUMB SLIDER END //-->
-					</li>
+					</li> -->
 				  </ul>
 				</div>
 			  </div>
-			  <!--// Main Banner //-->
-			  <!--// Main Content //-->
-			  <div class="kode-content">
-				
+			  <div class="kode-content">				
 				</div>
 				<section id="aboutus" class="ftb_Fortcoin">
 					<div class="container">
 						<div class="heading5 hdg_6">
-						  <h4>About the <span>Fortcoin</span></h4>
+						  <h4>About the <span>Furtcoin</span></h4>
 						</div>
 						<div class="row">
 							<div class="ftb_goal_tab_des">
@@ -229,42 +182,62 @@
 									<div class="panel panel-default">
 										<div class="ftb_goal_tabs">
 											<ul class="ftb_goal_tab_detail">
-												<li><a class="active" href="#tab1" data-toggle="tab">Club History</a></li>
-												<li><a href="#tab2" data-toggle="tab">Club Mission & vission</a></li>
-												<li><a href="#tab3" data-toggle="tab">Club Stats</a></li>
+												<li><a class="active" href="#tab1" data-toggle="tab">WhitePaper</a></li>
+												<li><a href="#tab2" data-toggle="tab">Our Vission vission</a></li>
+												<!-- <li><a href="#tab3" data-toggle="tab">Club Stats</a></li> -->
 											</ul>
 											<div class="panel-body">	
 												<div class="tab-content">
 													<div class="tab-pane active" id="tab1">
 														<div class="ftb_goal_tab_text">
-															<p>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit. Nam sed ligula odio. Sed id metus felis. Ut pretium nisl non justo condimentum id tincidunt nunc faucibus. Ut neque eros, pulvinar eu blandit quis, lacinia nec ipsum. Etiam vel orci ipsum. Sed eget velit ipsum. Duis in tortor scelerisque felis mattis imperdiet. Donec at libero tellus. Suspendisse consectetur consectetur bibendum.tincidunt nunc faucibus. </p>
+																Football has grown into a universal sport. This Whitepaper navigates from
+																the history of football, with its links to Rugby, and how the sport has grown
+																and advanced into a commercial sport.														
 															<div class="row">
 																<div class="col-md-6">
 																	<div class="ftb_goal_caption">
 																		<span class="icon-FORTCOIN-2"></span>
-																		<h5><a href="#">Dolor Sit Nam Sed</a></h5>
-																		<p>The first mate and his Skipper too will do their very best to make the others comfort</p>
+																		<h5><a href="#">"The Beautifull Game"</a></h5>
+																		<p>
+																		Once upon a time, football was a sport that attracted fans from all the
+																		corners of the world. It was seen as a sort of unity, bringing fans from different
+																		countries together and uniting them.
+																		</p>
 																	</div>
 																</div>
 																<div class="col-md-6">
 																	<div class="ftb_goal_caption">
 																		<span class="icon-symbol-1"></span>
-																		<h5><a href="#">Dolor Sit Nam Sed</a></h5>
-																		<p>The first mate and his Skipper too will do their very best to make the others comfort</p>
+																		<h5><a href="#">Sports as Unifying Force</a></h5>
+																		<p>
+																		Problems between communities and even countries have sometimes been
+																		settled with this sport.
+																		</p>
 																	</div>
 																</div>
+																</div>
+																<div class="row">
 																<div class="col-md-6">
 																	<div class="ftb_goal_caption margin_0">
 																		<span class="icon-signs"></span>
-																		<h5><a href="#">Dolor Sit Nam Sed</a></h5>
-																		<p>The first mate and his Skipper too will do their very best to make the others comfort</p>
+																		<h5><a href="#">Loyalty is no more being rewarded!</a></h5>
+																		<p>
+																		The days have gone, where the sport was seen as an avenue to rewind, have
+																		fun and have fans loyally support their teams. It is now a sport where
+																		oligarchs and foreign business bodies sink their money into, expecting a vast
+																		reward, which leads the most important aspect of the sport, the fans to
+																		suffer.
+																		</p>
 																	</div>
 																</div>
 																<div class="col-md-6">
 																	<div class="ftb_goal_caption margin_0">
 																		<span class="icon-FORTCOIN-1"></span>
-																		<h5><a href="#">Dolor Sit Nam Sed</a></h5>
-																		<p>The first mate and his Skipper too will do their very best to make the others comfort</p>
+																		<h5><a href="#">It is getting too expensive.</a></h5>
+																		<p>
+																		The prices of the tickets seem to be on the rise, with fans without such an
+																		amount, not able to afford and pay for the tickets.
+																		</p>
 																	</div>
 																</div>
 															</div>
@@ -272,13 +245,14 @@
 													</div>
 													<div class="tab-pane" id="tab2">
 														<div class="ftb_goal_club">
-															<h3>Club Mission</h3>
-															<p>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit. Nam sed ligula odio. Sed id metus felis. Ut pretium nisl non justo condimentum id tincidunt nunc faucibus. Ut neque eros, pulvinar eu blandit quis, lacinia nec ipsum. Etiam vel orci ipsum. Sed eget velit ipsum. Duis in tortor scelerisque felis mattis imperdiet. Donec at libero tellus. Suspendisse consectetur consectetur bibendum.tincidunt nunc faucibus. </p>
+															<h3>Our Vission</h3>
+															<p>This White Paper talks about the problem of the current traditional system
+																of football. It speaks on how fans are now treated as scums, having no say in
+																their team's decisions. This document will speak on the creation of Furt Coin,
+																a platform for fans and run by fans, and how Furt Coin intends to solve the
+																problem. </p>
 														</div>
-														<div class="ftb_goal_club">
-															<h3>Club Vission</h3>
-															<p>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit. Nam sed ligula odio. Sed id metus felis. Ut pretium nisl non justo condimentum id tincidunt nunc faucibus. Ut neque eros, pulvinar eu blandit quis, lacinia nec ipsum. Etiam vel orci ipsum. Sed eget velit ipsum. Duis in tortor scelerisque felis mattis imperdiet. Donec at libero tellus. Suspendisse consectetur consectetur bibendum.tincidunt nunc faucibus. </p>
-														</div>
+														
 													</div>
 													<div class="tab-pane" id="tab3">
 														<div class="ftb_club_stats">
@@ -309,35 +283,58 @@
 				<!-- video section -->
 				<section id="video" class="ftb-Fortcoin">
 					<div class="heading5 hdg_6">
-					  <h4>About the <span>Fortcoin</span></h4>
+					  <h4>About the <span>Furtcoin</span></h4>
 					</div>
 					<div class="container">
 						<div class="col-sm-6">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/7MSR-0KOxec" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/KXxW4yyrBRs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>
 						<div class="col-sm-6">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/7MSR-0KOxec" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/7MSR-0KOxec" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>
 					</div>
 				</section>
 				<!-- video section -->
 
-
-				<!-- chart section -->
-				<section id="tokensale" class="ftb_Fortcoin">
+				<section>
+				  <div class="container">
+					<!--// HEADING 5 //-->
 					<div class="heading5 hdg_6">
-					  <h4>Token <span>Sale</span></h4>
+					  <h4> Now Trading <span>At Exchanges</span></h4>
 					</div>
+					<!--// HEADING 5 //-->
+					<div class="row">
+					  <!--// FORTCOIN TEAM //-->
+					  <div class="col-md-6 col-sm-6">
+						<div class="ftb-team-thumb">
+						  <figure><img src="<?php echo get_template_directory_uri(); ?>/home/images/crex24.png" height="300px" alt=""></figure>
+						  <div class="ftb-team-dec">
 
-					<div class="container-fluid">
-						<img src="<?php echo get_template_directory_uri(); ?>/home/images/1123.jpg" alt="">
+							<div class="text">
+							  <a target="_blank" href="https://crex24.com/exchange/FURT-BTC"> Crex24</a>
+							  <!-- <p>Defender</p> -->
+							</div>
+							<a class="arrow-iconbtn" target="_blank" href="https://crex24.com/exchange/FURT-BTC"><i class="fa fa-arrow-right "></i></a>
+						  </div>
+						</div>
+					  </div>
+					  <!--// FORTCOIN TEAM //-->
+					  <!--// FORTCOIN TEAM //-->
+					  <div class="col-md-6 col-sm-6">
+						<div class="ftb-team-thumb">
+						  <figure><img src="<?php echo get_template_directory_uri(); ?>/home/images/bitebtc.jpg" height="300px" alt=""></figure>
+						  <div class="ftb-team-dec">
+							<div class="text">
+							  <a target="_blank" href="https://bitebtc.com/trade/furt_btc">BiteBTC</a>
+							  <!-- <p>Defender</p> -->
+							</div>
+							<a target="_blank" class="arrow-iconbtn" href="https://bitebtc.com/trade/furt_btc"><i class="fa fa-arrow-right "></i></a>
+						  </div>
+						</div>
+					  </div>		
 					</div>
-
+				  </div>
 				</section>
-
-
-
-
 
 				<!--// TENNIS EVENT BG //-->
 				<section id="blog" class="ftb-resultbg">
@@ -614,7 +611,7 @@
 				  <div class="container">
 					<!--// HEADING 5 //-->
 					<div class="heading5">
-					  <h4>Important Statictics</h4>
+					  <h4>Partners</h4>
 					</div>
 					<!--// HEADING 5 //-->
 					<div class="row">

@@ -15,6 +15,27 @@
 	Theme Support
 \*------------------------------------*/
 
+
+function create_posttype() {
+ 
+    register_post_type( 'slider',
+    // CPT Options
+        array(
+            'labels' => array(
+                'name' => __( 'Slider' ),                
+                'singular_name' => __( 'Slide' )
+            ),
+            'public' => true,
+            'has_archive' => true,           
+            'supports' => array( 'title', 'editor', 'thumbnail' ),
+            'rewrite' => array('slug' => 'slides')
+        )
+    );
+}
+// Hooking up our function to theme setup
+add_action( 'init', 'create_posttype' );
+
+
 if (!isset($content_width))
 {
     $content_width = 900;
