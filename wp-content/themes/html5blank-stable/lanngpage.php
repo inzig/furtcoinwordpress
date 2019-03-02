@@ -75,11 +75,11 @@ $slider = new WP_Query( $args );
 					</div>
 					<!--DL Menu END-->
 					<div class="ticket-wrap">
-					<a class="book-now" href="#"><i class="fa fa-ticket"></i>Exchange Tickets</a>
-					<a class="book-now" href="#"><i class="fa fa-ticket"></i>Buy Tickets</a>
+					<a class="book-now" href="#"><i class="fa fa-ticket"></i>Exchange Tickets</a>					
 					  <div class="lung-link">
-						<a href="#">en</a>
-						<a href="#">fr</a>
+						<!-- <a href="#">en</a>
+						<a href="#">fr</a> -->
+						<a class="book-now" href="#"><i class="fa fa-ticket"></i>Buy Tickets</a>
 					</div>
 					</div>
 				  </div>
@@ -88,79 +88,28 @@ $slider = new WP_Query( $args );
 			  <div id="mainbanner">
 				<div class="flexslider">
 				  <ul class="slides">
-					<li>
-					  <div class="thumb-slider">
-						<img src="<?php echo get_template_directory_uri(); ?>/home/images/slide4.jpg" alt="" />
-						<div class="container">
-						  <div class="kode-ft-caption text-left"> 
-							<div class="FORTCOIN-caption">  
-								<?php
+					<?php
 								while ( $slider->have_posts() ) : $slider->the_post();
-									echo "<h6>";
+					  echo '<li>'
+								.'<div class="thumb-slider">'
+								.'<img src="'.  get_template_directory_uri() .'/home/images/slide4.jpg" alt="" />'
+								.'<div class="container">'
+								.' <div class="kode-ft-caption text-left"> '
+								.'	<div class="FORTCOIN-caption">		'						
+								.' <h6>';
 									the_title();
 									echo "</h6>";
-									the_content();						
-								endwhile;
-								?>								
-							</div>
-							<div class="clearfix"></div>        
-							<p><a class="btn-4" href="#">Veiw More<i class="fa fa-angle-right"></i></a></p>
-							<div class="clearfix"></div>
-						  </div>
-						</div>
-					  </div>
-					</li>
-					<!-- <li>
-					  <div class="thumb-slider">
-						<img src="<?php echo get_template_directory_uri(); ?>/home/images/slide4.jpg" alt="" />
-						<div class="container">
-						  <div class="kode-ft-caption text-left"> 
-							<div class="FORTCOIN-caption">      
-							  <h6>Welcome</h6>
-							  <h4>FORTCOIN</h4>
-							  <h5>FORTCOIN Club</h5>
-							</div>
-							<div class="clearfix"></div>        
-							<p><a class="btn-4" href="#">Veiw More<i class="fa fa-angle-right"></i></a></p>
-							<div class="clearfix"></div>
-						  </div>
-						</div>
-					  </div>
-					</li> -->
-					<!-- <li>
-					  <div class="thumb-slider">
-						<img src="<?php echo get_template_directory_uri(); ?>/home/images/slide5.jpg" alt="" />
-						<div class="container">
-						  <div class="kode-ft-caption text-center"> 
-							<div class="FORTCOIN-caption">      
-							  <h6>Welcome</h6>
-							  <h4>FORTCOIN</h4>
-							  <h5>FORTCOIN Club</h5>
-							</div>
-							<div class="clearfix"></div>        
-							<p><a class="btn-4" href="#">Veiw More<i class="fa fa-angle-right"></i></a></p>
-							<div class="clearfix"></div>
-						  </div>
-						</div>
-					  </div>
-					</li> -->
-					<!-- <li>
-					  <div class="thumb-slider">
-						<img src="<?php echo get_template_directory_uri(); ?>/home/images/slide7.jpg" alt="" />
-						<div class="container">
-						  <div class="kode-ft-caption text-right"> 
-							<div class="FORTCOIN-caption">      
-							  <h6>Welcome</h6>
-							  <h4>FORTCOIN</h4>
-							  <h5>FORTCOIN Club</h5>
-							</div>
-							<div class="clearfix"></div>        
-							<p><a class="btn-4" href="#">Veiw More<i class="fa fa-angle-left"></i></a></p>
-							<div class="clearfix"></div>
-						  </div>
-						</div>
-					  </div>
-					</li> -->
+									the_content();																					
+						echo	'</div>'
+								.'<div class="clearfix"></div>      '  
+								.'	<p><a class="btn-4" href="#">Veiw More<i class="fa fa-angle-right"></i></a></p>'
+								.'	<div class="clearfix"></div>'
+								.' </div>'
+								.'</div>'
+								.'</div>'
+								.'</li>';
+						endwhile;
+					?>	
 				  </ul>
 				</div>
 			  </div>
@@ -189,10 +138,9 @@ $slider = new WP_Query( $args );
 											<div class="panel-body">	
 												<div class="tab-content">
 													<div class="tab-pane active" id="tab1">
-														<div class="ftb_goal_tab_text">
-																Football has grown into a universal sport. This Whitepaper navigates from
-																the history of football, with its links to Rugby, and how the sport has grown
-																and advanced into a commercial sport.														
+														<div class="ftb_goal_tab_text">	
+															Furt Coin is the currency adopted on the Furt platform. Furt Coin platform is one created by fans, run by fans. We know that you are tired of how clubs are run like business ventures, only out to exploit you and make more money at your expense when you have tirelessly supported them, at every step of the way. With this coin, you can benefit from our incredible features and key into the benefits of our platform. The outstanding factor about Furt Coin is that you can trade or exchange it in a crypto-exchange. While adopting the use of blockchain technology for our Furt Coin to ensure total safety and accurate records on the platform, we are certain that as time goes on, the price of the coin will increase because a lot of humans love football and will key into the advantages that we offer. 
+															You can be rest assured that the higher the demand for Furt Coin, the higher the worth of the coin as we operate under the Economic Law of Demand and Supply.													
 															<div class="row">
 																<div class="col-md-6">
 																	<div class="ftb_goal_caption">
@@ -665,72 +613,61 @@ $slider = new WP_Query( $args );
 				<!--// FORTCOIN TEAM SECTION //-->
 				<section>
 				  <div class="container">
-					<!--// HEADING 5 //-->
 					<div class="heading5 black">
 					  <h4>Our  <span>Team</span></h4>
 					</div>
-					<!--// HEADING 5 //-->
 					<div class="row">
-					  <!--// FORTCOIN TEAM //-->
 					  <div class="col-md-3 col-sm-6">
 						<div class="ftb-team-thumb">
-						  <figure><img src="<?php echo get_template_directory_uri(); ?>/home/images/ftb-teamone.png" alt=""></figure>
-						  <div class="ftb-team-dec">
-							<span>07</span>
-							<div class="text">
-							  <a href="#">Leo Adam</a>
-							  <p>Defender</p>
+						  <figure><img src="<?php echo get_template_directory_uri(); ?>/home/images/t1.jpg" alt=""></figure>
+						  <div class="ftb-team-dec">							
+							<div class="text">								
+							  <a href="https://www.linkedin.com/in/isaac-andrews-891182170">Isaac Andrews</a>
+								<span>C.E.O / Founder</span>
+							  <p>United Kingdom</p>
 							</div>
-							<a class="arrow-iconbtn" href="#"><i class="fa fa-arrow-right "></i></a>
+							<a class="arrow-iconbtn" href="https://www.linkedin.com/in/isaac-andrews-891182170"><i class="fa fa-arrow-right "></i></a>
 						  </div>
 						</div>
 					  </div>
-					  <!--// FORTCOIN TEAM //-->
-					  <!--// FORTCOIN TEAM //-->
 					  <div class="col-md-3 col-sm-6">
 						<div class="ftb-team-thumb">
-						  <figure><img src="<?php echo get_template_directory_uri(); ?>/home/images/ftb-teamtwo.png" alt=""></figure>
-						  <div class="ftb-team-dec">
-							<span>07</span>
+						  <figure><img src="<?php echo get_template_directory_uri(); ?>/home/images/t3.jpg" alt=""></figure>
+						  <div class="ftb-team-dec">							
 							<div class="text">
-							  <a href="#">Leo Adam</a>
-							  <p>Defender</p>
+								<a href="https://www.linkedin.com/in/marketa-conkova-5a3018170">Marketa Conkova</a>
+								<span>C.O.O</span>
+							  <p>United Kingdom</p>
 							</div>
-							<a class="arrow-iconbtn" href="#"><i class="fa fa-arrow-right "></i></a>
+							<a class="arrow-iconbtn" href="https://www.linkedin.com/in/marketa-conkova-5a3018170"><i class="fa fa-arrow-right "></i></a>
 						  </div>
 						</div>
 					  </div>
-					  <!--// FORTCOIN TEAM //-->
-					  <!--// FORTCOIN TEAM //-->
 					  <div class="col-md-3 col-sm-6">
 						<div class="ftb-team-thumb">
-						  <figure><img src="<?php echo get_template_directory_uri(); ?>/home/images/ftb-three.png" alt=""></figure>
+						  <figure><img src="<?php echo get_template_directory_uri(); ?>/home/images/t2.jpg" alt=""></figure>
 						  <div class="ftb-team-dec">
-							<span>07</span>
 							<div class="text">
-							  <a href="#">Leo Adam</a>
-							  <p>Defender</p>
+								<a href="https://www.linkedin.com/in/kveta-klemparova-923183170">Kveta Klemparova</a>
+								<span>Global Marketing Director</span>
+							  <p>United Kingdom</p>
 							</div>
-							<a class="arrow-iconbtn" href="#"><i class="fa fa-arrow-right "></i></a>
+							<a class="arrow-iconbtn" href="https://www.linkedin.com/in/kveta-klemparova-923183170"><i class="fa fa-arrow-right "></i></a>
 						  </div>
 						</div>
 					  </div>
-					  <!--// FORTCOIN TEAM //-->
-					  <!--// FORTCOIN TEAM //-->
 					  <div class="col-md-3 col-sm-6">
 						<div class="ftb-team-thumb">
-						  <figure><img src="<?php echo get_template_directory_uri(); ?>/home/images/ftb-teamfour.png" alt=""></figure>
+						  <figure><img src="<?php echo get_template_directory_uri(); ?>/home/images/user-9.jpeg" height="270px" alt=""></figure>
 						  <div class="ftb-team-dec">
-							<span>07</span>
 							<div class="text">
-							  <a href="#">Leo Adam</a>
-							  <p>Defender</p>
+								<a href="https://www.linkedin.com/in/inzmam-ul-hassan-45bb32b8/">Inzmam ul Hassan</a>
+								<span>Sr. Software Engineer</span>
 							</div>
-							<a class="arrow-iconbtn" href="#"><i class="fa fa-arrow-right "></i></a>
+							<a class="arrow-iconbtn" href="https://www.linkedin.com/in/inzmam-ul-hassan-45bb32b8/"><i class="fa fa-arrow-right "></i></a>
 						  </div>
 						</div>
 					  </div>
-					  <!--// FORTCOIN TEAM //-->
 					</div>
 				  </div>
 				</section>
