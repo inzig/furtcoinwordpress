@@ -792,12 +792,10 @@ $slider = new WP_Query( $args );
 					Furt Coin is the currency adopted on the Furt platform. Furt Coin platform is one created by fans, run by fans. We know that you are tired of how clubs are run like business ventures, only out to exploit you and make more money at your expense when you have tirelessly supported them, at every step of the way. With this coin, you can benefit from our incredible features and key into the benefits of our platform. The outstanding factor about Furt Coin is that you can trade or exchange it in a crypto-exchange. 
 					</p>
 					<ul class="spb-social2">
-					  <li><a href="#"> <i class="fa fa-facebook"></i></a></li>
-					  <li><a href="#"> <i class="fa fa-twitter"></i></a></li>
-					  <li><a href="#"> <i class="fa fa-linkedin"></i></a></li>
-					  <li><a href="#"> <i class="fa fa-rss"></i></a></li>
-					  <li><a href="#"> <i class="fa fa-google-plus"></i></a></li>
-					  <li><a href="#"> <i class="fa fa-linkedin"></i></a></li>
+						<li><a target="_blank" href="https://web.facebook.com/furt.coin.7"><i class="fa fa-facebook"></i></a></li>
+						<li><a target="_blank" href="https://twitter.com/furtcoin"><i class="fa fa-twitter"></i></a></li>
+						<li><a target="_blank" href="https://bitcointalk.org/index.php?topic=5040875"><i class="fa fa-bitcoin"></i></a></li>
+						<li><a target="_blank" href="https://www.instagram.com/furtcoin/"><i class="fa fa-instagram"></i></a></li>
 					</ul>
 				  </div>
 				</div>
@@ -810,7 +808,7 @@ $slider = new WP_Query( $args );
 						<a data-rel="prettyPhoto[]" href="<?php echo get_template_directory_uri(); ?>/home/images/popular-ft1.jpg" class="spb-play"><i class="fa fa-plus"></i></a>
 					  </figure>
 					  <div class="text">
-						<a href="#">Lorem ipsum dolor amet, conse-ctetur adipiscing elit. Donec st.</a>
+						<a href="#">Furtcoin  Post</a>
 						<ul class="spb-meta2">
 						  <li><a href="#"><i class="fa fa-heart"></i>13 like</a></li>
 						  <li><a href="#"><i class="fa fa-comment"></i>14 comment</a></li>
@@ -823,7 +821,7 @@ $slider = new WP_Query( $args );
 						<a data-rel="prettyPhoto[]" href="<?php echo get_template_directory_uri(); ?>/home/images/popular-ft2.jpg" class="spb-play"><i class="fa fa-plus"></i></a>
 					  </figure>
 					  <div class="text">
-						<a href="#">Lorem ipsum dolor amet, conse-ctetur adipiscing elit. Donec st.</a>
+						<a href="#">Furtcoin  Post</a>
 						<ul class="spb-meta2">
 						  <li><a href="#"><i class="fa fa-heart"></i>13 like</a></li>
 						  <li><a href="#"><i class="fa fa-comment"></i>14 comment</a></li>
@@ -836,7 +834,7 @@ $slider = new WP_Query( $args );
 						<a data-rel="prettyPhoto[]" href="<?php echo get_template_directory_uri(); ?>/home/images/popular-ft3.jpg" class="spb-play"><i class="fa fa-plus"></i></a>
 					  </figure>
 					  <div class="text">
-						<a href="#">Lorem ipsum dolor amet, conse-ctetur adipiscing elit. Donec st.</a>
+						<a href="#">Furtcoin  Post</a>
 						<ul class="spb-meta2">
 						  <li><a href="#"><i class="fa fa-heart"></i>13 like</a></li>
 						  <li><a href="#"><i class="fa fa-comment"></i>14 comment</a></li>
