@@ -75,7 +75,7 @@ $slider = new WP_Query( $args );
 					</div>
 					<!--DL Menu END-->
 					<div class="ticket-wrap">
-					<a class="book-now" href="#"><i class="fa fa-ticket"></i>Exchange Tickets</a>					
+					<a class="book-now" href="#"><i class="fa fa-ticket"></i>Swap Tickets</a>					
 					  <div class="lung-link">
 						<!-- <a href="#">en</a>
 						<a href="#">fr</a> -->
@@ -102,7 +102,7 @@ $slider = new WP_Query( $args );
 									the_content();																					
 						echo	'</div>'
 								.'<div class="clearfix"></div>      '  
-								.'	<p><a class="btn-4" href="#">Veiw More<i class="fa fa-angle-right"></i></a></p>'
+								.'	<p><a class="btn-4" href="#"></a></p>'
 								.'	<div class="clearfix"></div>'
 								.' </div>'
 								.'</div>'
@@ -118,7 +118,7 @@ $slider = new WP_Query( $args );
 				<section id="aboutus" class="ftb_Fortcoin">
 					<div class="container">
 						<div class="heading5 hdg_6">
-						  <h4>About the <span>Furtcoin</span></h4>
+						  <h4>About  <span>Furtcoin</span></h4>
 						</div>
 						<div class="row">
 							<div class="ftb_goal_tab_des">
@@ -138,7 +138,7 @@ $slider = new WP_Query( $args );
 											<div class="panel-body">	
 												<div class="tab-content">
 													<div class="tab-pane active" id="tab1">
-														<div class="ftb_goal_tab_text">	
+														<div class="ftb_goal_tab_text font-size-about">	
 															Furt Coin is the currency adopted on the Furt platform. Furt Coin platform is one created by fans, run by fans. We know that you are tired of how clubs are run like business ventures, only out to exploit you and make more money at your expense when you have tirelessly supported them, at every step of the way. With this coin, you can benefit from our incredible features and key into the benefits of our platform. The outstanding factor about Furt Coin is that you can trade or exchange it in a crypto-exchange. While adopting the use of blockchain technology for our Furt Coin to ensure total safety and accurate records on the platform, we are certain that as time goes on, the price of the coin will increase because a lot of humans love football and will key into the advantages that we offer. 
 															You can be rest assured that the higher the demand for Furt Coin, the higher the worth of the coin as we operate under the Economic Law of Demand and Supply.													
 															<div class="row">
@@ -227,11 +227,9 @@ $slider = new WP_Query( $args );
 					</div>
 				</section>
 
-
-				<!-- video section -->
 				<section id="video" class="ftb-Fortcoin">
 					<div class="heading5 hdg_6">
-					  <h4>About the <span>Furtcoin</span></h4>
+					  <h4>About <span>Furtcoin</span></h4>
 					</div>
 					<div class="container">
 						<div class="col-sm-6">
@@ -242,49 +240,125 @@ $slider = new WP_Query( $args );
 						</div>
 					</div>
 				</section>
-				<!-- video section -->
-
+			 
 				<section>
 				  <div class="container">
-					<!--// HEADING 5 //-->
 					<div class="heading5 hdg_6">
-					  <h4> Now Trading <span>At Exchanges</span></h4>
+					  <h4> OUR PARTNERS <span>AND LISTINGS</span></h4>
 					</div>
-					<!--// HEADING 5 //-->
 					<div class="row">
-					  <!--// FORTCOIN TEAM //-->
-					  <div class="col-md-6 col-sm-6">
+					  <div class="col-md-4 col-sm-6">
+						<div class="ftb-team-thumb">
+						  <figure><img src="<?php echo get_template_directory_uri(); ?>/home/images/coindex.jpg" height="300px" alt=""></figure>
+						  <div class="ftb-team-dec">
+							<div class="text">
+							  <a target="_blank" href="https://twitter.com/CoinCodex"> CoinCodex</a>
+							</div>
+							<a class="arrow-iconbtn" target="_blank" href="https://twitter.com/CoinCodex"><i class="fa fa-arrow-right "></i></a>
+						  </div>
+						</div>
+					  </div>
+						<div class="col-md-4 col-sm-6">
 						<div class="ftb-team-thumb">
 						  <figure><img src="<?php echo get_template_directory_uri(); ?>/home/images/crex24.png" height="300px" alt=""></figure>
 						  <div class="ftb-team-dec">
-
 							<div class="text">
 							  <a target="_blank" href="https://crex24.com/exchange/FURT-BTC"> Crex24</a>
-							  <!-- <p>Defender</p> -->
 							</div>
 							<a class="arrow-iconbtn" target="_blank" href="https://crex24.com/exchange/FURT-BTC"><i class="fa fa-arrow-right "></i></a>
 						  </div>
 						</div>
 					  </div>
-					  <!--// FORTCOIN TEAM //-->
-					  <!--// FORTCOIN TEAM //-->
-					  <div class="col-md-6 col-sm-6">
+					  <div class="col-md-4 col-sm-6">
 						<div class="ftb-team-thumb">
 						  <figure><img src="<?php echo get_template_directory_uri(); ?>/home/images/bitebtc.jpg" height="300px" alt=""></figure>
 						  <div class="ftb-team-dec">
 							<div class="text">
 							  <a target="_blank" href="https://bitebtc.com/trade/furt_btc">BiteBTC</a>
-							  <!-- <p>Defender</p> -->
 							</div>
 							<a target="_blank" class="arrow-iconbtn" href="https://bitebtc.com/trade/furt_btc"><i class="fa fa-arrow-right "></i></a>
 						  </div>
 						</div>
-					  </div>		
+					  </div>	
+						
+						<div class="col-md-4 col-sm-6">
+							<div class="ftb-team-thumb">
+									<figure>
+									</figure>
+									<div class="ftb-team-dec">
+									<div class="text">
+										<a target="_blank" href="#"> Coinlib.io</a>
+									</div>
+									<a class="arrow-iconbtn" target="_blank" href="#"><i class="fa fa-arrow-right "></i></a>
+									</div>
+							</div>
+					  </div>
+						<div class="col-md-4 col-sm-6">
+							<div class="ftb-team-thumb">
+									<figure>
+									</figure>
+									<div class="ftb-team-dec">
+									<div class="text">
+										<a target="_blank" href="#"> Icoslot.com</a>
+									</div>
+									<a class="arrow-iconbtn" target="_blank" href="#"><i class="fa fa-arrow-right "></i></a>
+									</div>
+							</div>
+					  </div>
+						<div class="col-md-4 col-sm-6">
+							<div class="ftb-team-thumb">
+									<figure>
+									</figure>
+									<div class="ftb-team-dec">
+									<div class="text">
+										<a target="_blank" href="#"> icorating</a>
+									</div>
+									<a class="arrow-iconbtn" target="_blank" href="#"><i class="fa fa-arrow-right "></i></a>
+									</div>
+							</div>
+					  </div>
+
+						<div class="col-md-4 col-sm-6">
+							<div class="ftb-team-thumb">
+									<figure>
+									</figure>
+									<div class="ftb-team-dec">
+									<div class="text">
+										<a target="_blank" href="#"> CoinGecko</a>
+									</div>
+									<a class="arrow-iconbtn" target="_blank" href="#"><i class="fa fa-arrow-right "></i></a>
+									</div>
+							</div>
+					  </div>
+						<div class="col-md-4 col-sm-6">
+							<div class="ftb-team-thumb">
+									<figure>
+									</figure>
+									<div class="ftb-team-dec">
+									<div class="text">
+										<a target="_blank" href="#"> ICOHOLDER</a>
+									</div>
+									<a class="arrow-iconbtn" target="_blank" href="#"><i class="fa fa-arrow-right "></i></a>
+									</div>
+							</div>
+					  </div>
+						<div class="col-md-4 col-sm-6">
+							<div class="ftb-team-thumb">
+									<figure>
+									</figure>
+									<div class="ftb-team-dec">
+									<div class="text">
+										<a target="_blank" href="#"> Coinschedule</a>
+									</div>
+									<a class="arrow-iconbtn" target="_blank" href="#"><i class="fa fa-arrow-right "></i></a>
+									</div>
+							</div>
+					  </div>
+
 					</div>
 				  </div>
 				</section>
 
-				<!--// TENNIS EVENT BG //-->
 				<section id="blog" class="ftb-resultbg">
 				  <div class="container">
 					<div class="heading5">
@@ -323,8 +397,7 @@ $slider = new WP_Query( $args );
 					</div>
 				  </div>
 				</section>
-				<!--// TENNIS EVENT BG //-->
-				<!--// TENNIS EVENT FIXTURE //-->
+				 
 				<section>
 				  <div class="container">
 					<div class="row">
@@ -364,50 +437,37 @@ $slider = new WP_Query( $args );
 							</li>
 						  </ul>
 						</div>
-					  </div>
-					  <!--// BLOG SLIDER //-->
-					  <!--// BLOG SLIDER //-->
-					  <div class="col-md-4">
-						<!--// HEADING 6 //-->
+					  </div> 
+					  <div class="col-md-4"> 
 						<div class="heading6">
 						  <h4>Recent<span>Videos</span></h4>
-						</div>
-						<!--// HEADING 6 //-->
-						<!--// POST //-->
+						</div> 
 						<div class="ftb-post-thumb">
 						  <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/home/images/ftb-post-slider2.jpg" alt=""></a>
 						  <a class="spb-play" href="#"><i class="fa fa-play-circle"></i></a>
 						  <div class="text">
 							<h6>Highlights OF Euro Cup 2nd Mtach</h6>
 						  </div>
-						</div>
-						<!--// POST //-->
-						<!--// POST //-->
+						</div> 
 						<div class="ftb-post-thumb">
 						  <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/home/images/ftb-post-slider3.jpg" alt=""></a>
 						  <a class="spb-play" href="#"><i class="fa fa-play-circle"></i></a>
 						  <div class="text">
 							<h6>A Single Fan In Stadium</h6>
 						  </div>
-						</div>
-						<!--// POST //-->
-					  </div>
-					  <!--// BLOG SLIDER //-->
-					  <div class="col-md-4">
-						<!--// HEADING 6 //-->
+						</div> 
+					  </div> 
+					  <div class="col-md-4"> 
 						<div class="heading6">
 						  <h4>Club<span>Ranking</span></h4>
 						</div>
-						<!--// HEADING 6 //-->
-						<!--// RATING TABLE //-->
 						<ul class="ftb-rating-table">
 						  <li>
 							<div class="ftb-position">
 							  1 . 
 							</div>
 							<div class="ftb-team-name">
-							  <img src="<?php echo get_template_directory_uri(); ?>/home/images/short-logo2.png" alt="">
-							  <a href="#">Lore Ipsum Dolor</a>
+							  <a href="#">Furtcoin</a>
 							</div>
 							<div class="ftb-team-points">
 							  20
@@ -418,8 +478,7 @@ $slider = new WP_Query( $args );
 							  2 . 
 							</div>
 							<div class="ftb-team-name">
-							  <img src="<?php echo get_template_directory_uri(); ?>/home/images/short-logo3.png" alt="">
-							  <a href="#">Lore Ipsum Dolor</a>
+							  <a href="#">Furtcoin</a>
 							</div>
 							<div class="ftb-team-points">
 							  25
@@ -430,8 +489,7 @@ $slider = new WP_Query( $args );
 							  3 . 
 							</div>
 							<div class="ftb-team-name">
-							  <img src="<?php echo get_template_directory_uri(); ?>/home/images/short-logo4.png" alt="">
-							  <a href="#">Lore Ipsum Dolor</a>
+							  <a href="#">Furtcoin</a>
 							</div>
 							<div class="ftb-team-points">
 							  30
@@ -442,8 +500,7 @@ $slider = new WP_Query( $args );
 							  4 . 
 							</div>
 							<div class="ftb-team-name">
-							  <img src="<?php echo get_template_directory_uri(); ?>/home/images/short-logo1.png" alt="">
-							  <a href="#">Lore Ipsum Dolor</a>
+							  <a href="#">Furtcoin</a>
 							</div>
 							<div class="ftb-team-points">
 							  45
@@ -454,8 +511,7 @@ $slider = new WP_Query( $args );
 							  5 . 
 							</div>
 							<div class="ftb-team-name">
-							  <img src="<?php echo get_template_directory_uri(); ?>/home/images/short-logo6.png" alt="">
-							  <a href="#">Lore Ipsum Dolor</a>
+							  <a href="#">Furtcoin</a>
 							</div>
 							<div class="ftb-team-points">
 							  29
@@ -466,26 +522,18 @@ $slider = new WP_Query( $args );
 							  6 . 
 							</div>
 							<div class="ftb-team-name">
-							  <img src="<?php echo get_template_directory_uri(); ?>/home/images/short-logo7.png" alt="">
-							  <a href="#">Lore Ipsum Dolor</a>
+							  <a href="#">Furtcoin</a>
 							</div>
 							<div class="ftb-team-points">
 							  03
 							</div>
 						  </li>
 						</ul>
-						<!--// RATING TABLE //-->
 					  </div>
-					  <!--// BLOG SLIDER //-->
 					</div>
-					<!--// MAIN TABS TABLE //-->
-					
-					
-					<!--// MAIN TABS TABLE //-->
 				  </div>
 				</section>
-				<!--// TENNIS EVENT FIXTURE //-->
-				<!--// TENNIS GALLERY //-->
+				 
 				<section class="ftb-gallery-bg">
 					<div class="container">
 					  <div class="heading5">
@@ -554,7 +602,7 @@ $slider = new WP_Query( $args );
 					  </div>
 					</div>
 				</section>
-				<!--// FORTCOIN COUNTER //-->
+				 
 				<div class="ftb-counterup">
 				  <div class="container">
 					<!--// HEADING 5 //-->
@@ -609,8 +657,7 @@ $slider = new WP_Query( $args );
 					</div>
 				  </div>
 				</div>
-				<!--// FORTCOIN COUNTER //-->
-				<!--// FORTCOIN TEAM SECTION //-->
+				 
 				<section>
 				  <div class="container">
 					<div class="heading5 black">
@@ -657,16 +704,40 @@ $slider = new WP_Query( $args );
 						</div>
 					  </div>
 					  <div class="col-md-3 col-sm-6">
-						<div class="ftb-team-thumb">
-						  <figure><img src="<?php echo get_template_directory_uri(); ?>/home/images/user-9.jpeg" height="270px" alt=""></figure>
-						  <div class="ftb-team-dec">
-							<div class="text">
-								<a href="https://www.linkedin.com/in/inzmam-ul-hassan-45bb32b8/">Inzmam ul Hassan</a>
-								<span>Sr. Software Engineer</span>
+							<div class="ftb-team-thumb">
+								<figure><img src="<?php echo get_template_directory_uri(); ?>/home/images/user-9.jpeg" height="270px" alt=""></figure>
+								<div class="ftb-team-dec">
+								<div class="text">
+									<a href="https://www.linkedin.com/in/inzmam-ul-hassan-45bb32b8/">Inzmam ul Hassan</a>
+									<span>Sr. Software Engineer / Architect</span>
+								</div>
+								<a class="arrow-iconbtn" href="https://www.linkedin.com/in/inzmam-ul-hassan-45bb32b8/"><i class="fa fa-arrow-right "></i></a>
+								</div>
 							</div>
-							<a class="arrow-iconbtn" href="https://www.linkedin.com/in/inzmam-ul-hassan-45bb32b8/"><i class="fa fa-arrow-right "></i></a>
-						  </div>
-						</div>
+					  </div>
+						<div class="col-md-3 col-sm-6">
+							<div class="ftb-team-thumb">
+								<figure><img src="<?php echo get_template_directory_uri(); ?>/home/images/user-6.jpeg"  alt=""></figure>
+								<div class="ftb-team-dec">
+								<div class="text">
+									<a href="https://www.linkedin.com/in/attique-baig-08a10282/">Attique Baig</a>
+									<span>UI/UX Designer</span>
+								</div>
+								<a class="arrow-iconbtn" href="https://www.linkedin.com/in/attique-baig-08a10282/"><i class="fa fa-arrow-right "></i></a>
+								</div>
+							</div>
+					  </div>
+						<div class="col-md-3 col-sm-6">
+							<div class="ftb-team-thumb">
+								<figure><img src="<?php echo get_template_directory_uri(); ?>/home/images/user-2.jpeg"  alt=""></figure>
+								<div class="ftb-team-dec">
+								<div class="text">
+									<a href="https://www.linkedin.com/in/zaheer-mehmood-7805a14a/">Zaheer Mehmood</a>
+									<span>Software Engineer</span>
+								</div>
+								<a class="arrow-iconbtn" href="https://www.linkedin.com/in/zaheer-mehmood-7805a14a/"><i class="fa fa-arrow-right "></i></a>
+								</div>
+							</div>
 					  </div>
 					</div>
 				  </div>
@@ -717,8 +788,9 @@ $slider = new WP_Query( $args );
 					<div class="ft-logo">
 					  <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/home/images/logo2.png" alt=""></a>
 					</div>
-					<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet ante at nunc pretium mattis. Nunc ac semp a libero et, iaculis gravida orci.</p>
-					<p>Suspendisse imperdiet dolor in tristique dignissim. Fusce lacus dolor, accumsan . .</p>
+					<p>
+					Furt Coin is the currency adopted on the Furt platform. Furt Coin platform is one created by fans, run by fans. We know that you are tired of how clubs are run like business ventures, only out to exploit you and make more money at your expense when you have tirelessly supported them, at every step of the way. With this coin, you can benefit from our incredible features and key into the benefits of our platform. The outstanding factor about Furt Coin is that you can trade or exchange it in a crypto-exchange. 
+					</p>
 					<ul class="spb-social2">
 					  <li><a href="#"> <i class="fa fa-facebook"></i></a></li>
 					  <li><a href="#"> <i class="fa fa-twitter"></i></a></li>
@@ -827,52 +899,10 @@ $slider = new WP_Query( $args );
 				  <li><a href="#">Videos</a></li>
 				  <li><a href="#">post</a></li>
 				</ul>
-				<p>All Rights Reserved</p>
+				<p>All Rights Reserved FURTCOIN</p>
 				<a id="kode-topbtn" href="#"><i class="fa fa-angle-double-up"></i></a>
 			  </div>
-			  <!--// COPY RIGHT //-->
 			</div>
 		  </footer>
-		  <!--// Contact Footer //-->
-		  <!--// Wrapper //-->
-		  <!-- Modal -->
-			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
-			<div class="modal-dialog">
-			  <div class="modal-content">
-				<div class="modal-header thbg-color">
-				  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				  <h4 class="modal-title">Login To Your Account</h4>
-				</div>
-				<div class="modal-body">
-				  <form class="kode-loginform">
-					<p><span>User Name</span> <input type="text" placeholder="User Name"></p>
-					<p><span>Password</span> <input type="password" placeholder="Password"></p>
-					<p><label><input type="checkbox"><span>Remember Me</span></label></p>
-					<p class="kode-submit"><a href="#">Lost Your Password</a> <input class="thbg-colortwo" type="submit" value="Sign in"></p>
-				  </form>
-				</div>
-			  </div>
-			</div>
-		  </div>
-			<!-- Modal -->
-		  <div class="modal fade" id="myModalTwo" tabindex="-1" role="dialog" aria-hidden="true">
-			  <div class="modal-dialog">
-				<div class="modal-content">
-				  <div class="modal-header thbg-color">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title">Register</h4>
-				  </div>
-				  <div class="modal-body">
-					<form class="kode-loginform">
-					  <p><span>Email</span> <input type="text" placeholder="Email"></p>
-					  <p><span>Password</span> <input type="password" placeholder="Password"></p>
-					  <p><span>Retype Password</span> <input type="password" placeholder="Retype Password"></p>
-					  <p><label><input type="checkbox"><span>Remember Me</span></label></p>
-					  <p class="kode-submit"><a href="#">Lost Your Password</a> <input class="thbg-colortwo" type="submit" value="Sign Up"></p>
-					</form>
-				  </div>
-				</div>
-			  </div>
-		  </div>
-
+		
 <?php get_footer(); ?>

@@ -15,8 +15,9 @@ header{
          FORTCOIN PAGE CSS START
       ============================================================
 */
+.font-size-about{
+    font-size: 14px;
 }
-*/
 .kode-FORTCOIN .kode-content{
     padding: 0;
 }
@@ -695,7 +696,7 @@ header{
 	padding-left:0px;
 }
 .ftb_goal_tabs{
-	padding:24px 0px 0px;
+	/* padding:24px 0px 0px; */
 }
 .ftb_goal_tab_detail{
 	margin-bottom:24px;
