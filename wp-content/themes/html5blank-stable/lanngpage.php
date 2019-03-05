@@ -124,7 +124,7 @@ $slider = new WP_Query( $args );
 							<div class="ftb_goal_tab_des">
 								<div class="col-md-3">
 									<div class="ftb_goal_fig">
-										<img src="<?php echo get_template_directory_uri(); ?>/home/images/goal.jpg" alt="images">
+										<img src="<?php echo get_template_directory_uri(); ?>/home/images/IMG-5.jpg" alt="images">
 									</div>
 								</div>
 								<div class="col-md-9">
@@ -241,7 +241,7 @@ $slider = new WP_Query( $args );
 					</div>
 				</section>
 			 
-				<section>
+				<section id="partners">
 				  <div class="container">
 					<div class="heading5 hdg_6">
 					  <h4> OUR PARTNERS <span>AND LISTINGS</span></h4>
@@ -367,7 +367,7 @@ $slider = new WP_Query( $args );
 					<div class="container">
 					<div class="col-sm-6 col-md-4">
 						<div class="ftb-post-thumb">
-								<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/home/images/ftb-post-slider.jpg" alt=""></a>
+								<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/home/images/IMG-1.jpg" alt=""></a>
 								<div class="text">
 								  <h6>Best Goal Save In History</h6>
 								  <a class="btn-4" href="#">Read More</a>
@@ -377,7 +377,7 @@ $slider = new WP_Query( $args );
 
 					<div class="col-sm-6 col-md-4">
 						<div class="ftb-post-thumb">
-								<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/home/images/ftb-post-slider.jpg" alt=""></a>
+								<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/home/images/IMG-2.jpg" alt=""></a>
 								<div class="text">
 								  <h6>Best Goal Save In History</h6>
 								  <a class="btn-4" href="#">Read More</a>
@@ -387,7 +387,7 @@ $slider = new WP_Query( $args );
 
 					<div class="col-sm-6 col-md-4">
 						<div class="ftb-post-thumb">
-								<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/home/images/ftb-post-slider.jpg" alt=""></a>
+								<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/home/images/IMG-3.jpg" alt=""></a>
 								<div class="text">
 								  <h6>Best Goal Save In History</h6>
 								  <a class="btn-4" href="#">Read More</a>
@@ -398,7 +398,7 @@ $slider = new WP_Query( $args );
 				  </div>
 				</section>
 				 
-				<section>
+				<section id="news">
 				  <div class="container">
 					<div class="row">
 					  <!--// BLOG SLIDER //-->
@@ -410,7 +410,7 @@ $slider = new WP_Query( $args );
 						  <ul class="bxslider">
 							<li>
 							  <div class="ftb-post-thumb">
-								<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/home/images/ftb-post-slider.jpg" alt=""></a>
+								<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/home/images/IMG-4.jpg" alt=""></a>
 								<div class="text">
 								  <h6>Best Goal Save In History</h6>
 								  <a class="btn-4" href="#">Read More</a>
@@ -534,7 +534,7 @@ $slider = new WP_Query( $args );
 				  </div>
 				</section>
 				 
-				<section class="ftb-gallery-bg">
+				<section id="gallary" class="ftb-gallery-bg">
 					<div class="container">
 					  <div class="heading5">
 						<h4>Our  <span>Gallery</span></h4>
@@ -603,11 +603,11 @@ $slider = new WP_Query( $args );
 					</div>
 				</section>
 				 
-				<div class="ftb-counterup">
+				<div id="embassadors" class="ftb-counterup">
 				  <div class="container">
 					<!--// HEADING 5 //-->
 					<div class="heading5">
-					  <h4>Partners</h4>
+					  <h4>Embassadors</h4>
 					</div>
 					<!--// HEADING 5 //-->
 					<div class="row">
@@ -658,7 +658,7 @@ $slider = new WP_Query( $args );
 				  </div>
 				</div>
 				 
-				<section>
+				<section id="team">
 				  <div class="container">
 					<div class="heading5 black">
 					  <h4>Our  <span>Team</span></h4>
@@ -780,7 +780,7 @@ $slider = new WP_Query( $args );
 						</div>
 					</div>
 				</section>
-		  <footer class="FORTCOIN-footer">
+		  <footer id="footer" class="FORTCOIN-footer">
 			<div class="container">
 			  <div class="row">
 				<div class="col-md-4">
