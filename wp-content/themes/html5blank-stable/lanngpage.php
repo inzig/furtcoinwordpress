@@ -616,8 +616,9 @@ $slider = new WP_Query( $args );
 						<div class="counterup-dec">
 						  <span class="icon-FORTCOIN"></span>
 						  <div class="text">
-							<h3 class="word-count">123</h3>
-							<p>exchange detail</p>
+							<img src="<?php echo get_template_directory_uri(); ?>/home/images/emb-1.jpg" height="150px" alt="">
+							<!-- <h3 class="word-count"></h3> -->
+							<p>Adebunmi Ojedele</p>
 						  </div>
 						</div>
 					  </div>
@@ -627,32 +628,13 @@ $slider = new WP_Query( $args );
 						<div class="counterup-dec">
 						  <span class="icon-soccer"></span>
 						  <div class="text">
-							<h3 class="word-count">123</h3>
-							<p>exchange detail</p>
+							<img src="<?php echo get_template_directory_uri(); ?>/home/images/emb-2.jpg" height="150px" alt="">
+							<!-- <h3 class="word-count"></h3> -->
+							<p>Roy Carlos Ronaldo Shanks</p>
 						  </div>
 						</div>
 					  </div>
-					  <!--// COUNTER //-->
-					  <div class="col-md-3 col-sm-3">
-						<div class="counterup-dec">
-						  <span class="icon-symbol"></span>
-						  <div class="text">
-							<h3 class="word-count">123</h3>
-							<p>exchange detail</p>
-						  </div>
-						</div>
-					  </div>
-					  <!--// COUNTER //-->
-					  <!--// COUNTER //-->
-					  <div class="col-md-3 col-sm-3">
-						<div class="counterup-dec">
-						  <span class="icon-cup"></span>
-						  <div class="text">
-							<h3 class="word-count">123</h3>
-							<p>Awards & Trophies</p>
-						  </div>
-						</div>
-					  </div>
+					  
 					  <!--// COUNTER //-->
 					</div>
 				  </div>
