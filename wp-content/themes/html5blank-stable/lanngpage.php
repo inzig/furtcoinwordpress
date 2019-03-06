@@ -283,78 +283,77 @@ $slider = new WP_Query( $args );
 						
 						<div class="col-md-4 col-sm-6">
 							<div class="ftb-team-thumb">
-									<figure>
+									<figure><img src="<?php echo get_template_directory_uri(); ?>/home/images/colinlib.png" height="300px" alt="">
 									</figure>
 									<div class="ftb-team-dec">
 									<div class="text">
-										<a target="_blank" href="#"> Coinlib.io</a>
+										<a target="_blank" href="https://coinlib.io/coin/FURT/Furtcoin"> Coinlib.io</a>
 									</div>
-									<a class="arrow-iconbtn" target="_blank" href="#"><i class="fa fa-arrow-right "></i></a>
+									<a class="arrow-iconbtn" target="_blank" href="https://coinlib.io/coin/FURT/Furtcoin"><i class="fa fa-arrow-right "></i></a>
 									</div>
 							</div>
 					  </div>
 						<div class="col-md-4 col-sm-6">
 							<div class="ftb-team-thumb">
-									<figure>
+									<figure><img src="<?php echo get_template_directory_uri(); ?>/home/images/icoslot.png" height="300px" alt="">
 									</figure>
 									<div class="ftb-team-dec">
 									<div class="text">
-										<a target="_blank" href="#"> Icoslot.com</a>
+										<a target="_blank" href="https://icoslot.com/en/ico/furtcoin/"> Icoslot.com</a>
 									</div>
-									<a class="arrow-iconbtn" target="_blank" href="#"><i class="fa fa-arrow-right "></i></a>
+									<a class="arrow-iconbtn" target="_blank" href="https://icoslot.com/en/ico/furtcoin/"><i class="fa fa-arrow-right "></i></a>
 									</div>
 							</div>
 					  </div>
 						<div class="col-md-4 col-sm-6">
 							<div class="ftb-team-thumb">
-									<figure>
+									<figure><img src="<?php echo get_template_directory_uri(); ?>/home/images/icorating.jpeg" height="300px" alt="">
 									</figure>
 									<div class="ftb-team-dec">
 									<div class="text">
-										<a target="_blank" href="#"> icorating</a>
+										<a target="_blank" href="https://icorating.com/ico/furtcoin-furt/"> icorating</a>
 									</div>
-									<a class="arrow-iconbtn" target="_blank" href="#"><i class="fa fa-arrow-right "></i></a>
+									<a class="arrow-iconbtn" target="_blank" href="https://icorating.com/ico/furtcoin-furt/"><i class="fa fa-arrow-right "></i></a>
 									</div>
 							</div>
 					  </div>
 
 						<div class="col-md-4 col-sm-6">
 							<div class="ftb-team-thumb">
-									<figure>
+									<figure><img src="<?php echo get_template_directory_uri(); ?>/home/images/coingecko.png" height="300px" alt="">
 									</figure>
 									<div class="ftb-team-dec">
 									<div class="text">
-										<a target="_blank" href="#"> CoinGecko</a>
+										<a target="_blank" href="https://www.coingecko.com/en/coins/furtcoin?utm_content=furtcoin&utm_medium=search_coin&utm_source=coingecko"> CoinGecko</a>
 									</div>
-									<a class="arrow-iconbtn" target="_blank" href="#"><i class="fa fa-arrow-right "></i></a>
+									<a class="arrow-iconbtn" target="_blank" href="https://www.coingecko.com/en/coins/furtcoin?utm_content=furtcoin&utm_medium=search_coin&utm_source=coingecko"><i class="fa fa-arrow-right "></i></a>
 									</div>
 							</div>
 					  </div>
 						<div class="col-md-4 col-sm-6">
 							<div class="ftb-team-thumb">
-									<figure>
+									<figure><img src="<?php echo get_template_directory_uri(); ?>/home/images/icoholder.png" height="300px" alt="">
 									</figure>
 									<div class="ftb-team-dec">
 									<div class="text">
-										<a target="_blank" href="#"> ICOHOLDER</a>
+										<a target="_blank" href="https://icoholder.com/en/furtcoin-24907"> ICOHOLDER</a>
 									</div>
-									<a class="arrow-iconbtn" target="_blank" href="#"><i class="fa fa-arrow-right "></i></a>
+									<a class="arrow-iconbtn" target="_blank" href="https://icoholder.com/en/furtcoin-24907"><i class="fa fa-arrow-right "></i></a>
 									</div>
 							</div>
 					  </div>
 						<div class="col-md-4 col-sm-6">
 							<div class="ftb-team-thumb">
-									<figure>
+									<figure><img src="<?php echo get_template_directory_uri(); ?>/home/images/coinschedule.svg" height="300px" alt="">
 									</figure>
 									<div class="ftb-team-dec">
 									<div class="text">
-										<a target="_blank" href="#"> Coinschedule</a>
+										<a target="_blank" href="https://www.coinschedule.com/cryptocurrency/furtcoin"> Coinschedule</a>
 									</div>
-									<a class="arrow-iconbtn" target="_blank" href="#"><i class="fa fa-arrow-right "></i></a>
+									<a class="arrow-iconbtn" target="_blank" href="https://www.coinschedule.com/cryptocurrency/furtcoin"><i class="fa fa-arrow-right "></i></a>
 									</div>
 							</div>
 					  </div>
-
 					</div>
 				  </div>
 				</section>
@@ -607,7 +606,7 @@ $slider = new WP_Query( $args );
 				  <div class="container">
 					<!--// HEADING 5 //-->
 					<div class="heading5">
-					  <h4>Embassadors</h4>
+					  <h4>Ambassadors</h4>
 					</div>
 					<!--// HEADING 5 //-->
 					<div class="row">
@@ -618,7 +617,7 @@ $slider = new WP_Query( $args );
 						  <div class="text">
 							<img src="<?php echo get_template_directory_uri(); ?>/home/images/emb-1.jpg" height="150px" alt="">
 							<!-- <h3 class="word-count"></h3> -->
-							<p>Adebunmi Ojedele</p>
+							<p>Roy Carlos Ronaldo Shanks</p>
 						  </div>
 						</div>
 					  </div>
@@ -629,8 +628,8 @@ $slider = new WP_Query( $args );
 						  <span class="icon-soccer"></span>
 						  <div class="text">
 							<img src="<?php echo get_template_directory_uri(); ?>/home/images/emb-2.jpg" height="150px" alt="">
-							<!-- <h3 class="word-count"></h3> -->
-							<p>Roy Carlos Ronaldo Shanks</p>
+							<!-- <h3 class="word-count"></h3> -->							
+							<p>Adebunmi Ojedele</p>
 						  </div>
 						</div>
 					  </div>
