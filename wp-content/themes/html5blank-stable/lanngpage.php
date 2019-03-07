@@ -617,7 +617,7 @@ $slider = new WP_Query( $args );
 						  <div class="text">
 							<img src="<?php echo get_template_directory_uri(); ?>/home/images/emb-1.jpg" height="150px" alt="">
 							<!-- <h3 class="word-count"></h3> -->
-							<p>Roy Carlos Ronaldo Shanks</p>
+							<p>R shanks</p>
 						  </div>
 						</div>
 					  </div>
